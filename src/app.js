@@ -4,6 +4,7 @@ import {Provider} from 'react-redux'; //Communication glue, it is what makes the
 import {createStore} from 'redux';
 import reducers from './reducers'; //to import index file
 import {Header} from './components/common';
+import LibraryList from './components/LibraryList';
 
 
 const App =() =>{
@@ -11,6 +12,7 @@ return(
   <Provider store={createStore(reducers)}>
     <View>
       <Header headerText="Tech Stack" />
+      <LibraryList />
     </View>
   </Provider>
   );
